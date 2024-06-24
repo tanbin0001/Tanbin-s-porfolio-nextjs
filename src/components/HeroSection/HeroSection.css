@@ -1,0 +1,101 @@
+ 
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 290px;  
+    height: 290px;  
+  }
+  
+  .external-shadow {
+    width: 100%;  
+    height: 100%;  
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0.5em 0.5em 3em blueviolet,
+                -0.5em 0.5em 3em blue,
+                0.5em -0.5em 3em purple,
+                -0.5em -0.5em 3em cyan;
+    z-index: 999;
+    animation: rotate 3s linear infinite;
+    background-color: #212121;
+  }
+  
+  .intern {
+    position: absolute;
+    color: white;
+    z-index: 9999;
+ margin-top: 29px ;
+ margin-left: 13px ;
+  }
+  
+  .intern::before {
+    content: url('../../assets/herosection-profile.png');
+    animation: percent 2s ease-in-out infinite;
+
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+  /* ========================================================= */
+  /* button */
+  /* ========================================================= */
+
+  .hero-button {
+    width:  10rem;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+                background: #ffffff;
+                color: black;
+
+   }
+   
+  
+   .hero-button::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #002fca 0%, #8c44ff 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 10rem;
+   }

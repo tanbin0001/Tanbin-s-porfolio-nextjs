@@ -14,15 +14,16 @@ import logo from '../../assets/logo.png'
 
 export const Nav = () => {
     return (
-        <Navbar>
+        <Navbar className="dark:bg-black dark:border-black text-white !important">
+
             <NavbarContainer>
-                <NavbarList>
+                <NavbarList >
                     <NavbarItem>Projects</NavbarItem>
                     <NavbarItem>Research</NavbarItem>
                     <NavbarItem>Contact</NavbarItem>
                 </NavbarList>
                 <NavbarBrand>
-                    <Image alt='logo' width={70} height={70} src={logo} />
+                    <Image alt='logo' width={50} height={50} src={logo} />
                 </NavbarBrand>
                 <NavbarList>
                     <NavbarItem>Figma</NavbarItem>
