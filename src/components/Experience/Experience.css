@@ -1,5 +1,4 @@
- 
- #gasses {
+#gasses {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -24,13 +23,25 @@
     display: flex;
     flex-direction: column;
     font-family: 'Arial', sans-serif; /* Changed to a common font */
-     height: 250px;
     justify-content: space-around;
     padding: 1.5rem; /* Adjusted for better spacing */
-    width: 500px;
     text-align: center; /* Center align text */
-
+    
+    /* Responsive adjustments */
+    height: 250px; /* Default height for larger screens */
+    width: 500px; /* Default width for larger screens */
+    font-size: 1rem; /* Default font size */
+    
     transition: transform 0.3s ease-in-out; /* Added transition for hover effect */
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+    .gas {
+        height: 200px; /* Adjust height for smaller screens */
+        width: 100%; /* Full width for smaller screens */
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
 }
 
 .gas:hover {
@@ -54,9 +65,11 @@
     line-height: 1.4; /* Improved readability */
 }
 
-.gas.he { --color: #92daf1; filter: brightness(125%); 
-   
+.gas.he { 
+    --color: #92daf1; 
+    filter: brightness(125%); 
 }
+
 .gas.xe { 
     --color:  #C4C4C6; 
     filter: brightness(105%);

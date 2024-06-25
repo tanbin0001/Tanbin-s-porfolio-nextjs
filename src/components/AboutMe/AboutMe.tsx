@@ -3,14 +3,15 @@ import about from "../../assets/aboutPhoto.jpg";
 
 const AboutMe = () => {
     return (
-        <section className='  my-20   '>
-            <div className='flex flex-col items-center justify-center h-screen'>
+        <section className='     '>
+            {/* <div className='flex flex-col items-center justify-center '> */}
+            <div className='flex flex-col items-center justify-center '>
                 <div className='text-center '>
                     <p className='animate-pulse'>Get To Know More</p>
                     <h1 className='md:text-4xl font-bold'>&lt;About Me/&gt;</h1>
                 </div>
 
-                <div className='lg:flex justify-between   w-full'>
+                <div className='grid lg:grid-cols-2 lg:justify-items-stretch justify-items-center  '>
                     {/* Biography part */}
                     <div className='space-y-3  text-center md:text-start lg:w-[500px]  '>
                         <p>BIOGRAPHY</p>

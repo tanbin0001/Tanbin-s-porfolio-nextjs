@@ -1,0 +1,103 @@
+/* Font: "Neon Glow" by weknow (https://www.fontspace.com/neon-glow-font-f14014) */
+@font-face {
+    font-family: 'Neon Glow';
+    src: url(https://assets.codepen.io/230569/NeonGlow-8VLz.ttf);
+  }
+  
+  html {
+    background-color: #101010;
+    box-sizing: border-box;
+  }
+  
+  main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  #techsses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    > * {
+      margin: 2rem;
+    }
+  }
+  
+  .techs {
+    --blur: 1.75rem;
+    --box-blur: calc(0.5 * var(--blur));
+    --glow: var(--color);
+    --size: 12rem;
+    
+    align-items: center;
+    border-radius: 12px;
+    border: 4px solid currentColor;
+    box-shadow: 
+      /* --- "glass" tube --- */
+      /* inside */ inset 0 0 0 2px rgba(0, 0, 0, 0.15),
+      /* outside */      0 0 0 2px rgba(0, 0, 0, 0.15),
+      /* --- glow --- */
+      /* inside */ inset 0 0 var(--box-blur) var(--glow),
+      /* outside */      0 0 var(--box-blur) var(--glow);
+    color: var(--color, white);
+    display: inline-flex;
+    flex-direction: column;
+    font-family: system-ui, sans-serif;
+    height: var(--size);
+    justify-content: space-around;
+    padding: 1rem;
+    width: var(--size);
+    
+    > * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .number { 
+      font-weight: 700; 
+    }
+    
+    .symbol { 
+      font-size: 30px; 
+      font-family: 'Neon Glow';
+      text-shadow: 0 0 var(--blur) var(--glow);
+    }
+    
+    &.html { --color: #FF6C1A; filter: saturate(150%); } 
+    &.css { --color: #23A1FF; filter: saturate(150%); } 
+    &.sass { --color: #DB6DA4; filter: saturate(150%); } 
+    &.nextJs { --color: #ffffff; filter: saturate(150%); } 
+    &.reactJs { --color: #88D6FF; filter: saturate(150%); } 
+    &.angularJs { --color: #D20033; filter: saturate(150%); } 
+    &.js { --color: #FFE739; filter: saturate(150%); } 
+    &.ts { --color: #007FDA; filter: saturate(150%); } 
+    &.tailwind { --color: #15D0C5; filter: saturate(150%); } 
+    &.bootstrap { --color: #a363df; filter: saturate(150%); } 
+    &.material { --color: #0066ff; filter: saturate(150%); } 
+    &.antd { --color: #eb838f; filter: saturate(150%); } 
+    &.shadecn { --color: #ffffff; filter: saturate(150%); } 
+    &.redux { --color: #ccb4f3; filter: saturate(150%); } 
+    &.zustand { --color: #b8876f; filter: saturate(150%); } 
+    
+    
+    /* backend */
+    &.nodejs { --color: #68C04D; filter: saturate(150%); } 
+    &.expressjs { --color: #ffffff; filter: saturate(150%); } 
+    &.axios { --color: #8f8f8f; filter: saturate(150%); } 
+    &.postgresql { --color: #326E9C; filter: saturate(150%); } 
+    &.graphql { --color: #F539B7; filter: saturate(150%); } 
+    &.mongodb { --color: #b2fdab; filter: saturate(150%); } 
+    &.firebase { --color: #FFAB00; filter: saturate(150%); } 
+    &.mongoose { --color: #920000; filter: saturate(150%); } 
+    &.jwt { --color: #FF0161; filter: saturate(150%); } 
+  
+    /* tools */
+    &.github { --color: #ffffff; filter: saturate(150%); } 
+    &.gitlab { --color: #ff6b51; filter: saturate(150%); } 
+    &.cypress { --color: #0FAF97; filter: saturate(150%); } 
+  }
+  
+  
