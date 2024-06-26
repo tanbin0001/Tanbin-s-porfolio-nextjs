@@ -15,7 +15,7 @@ const HeroSection = () => {
     return (
 
 
-        <div className="  flex flex-col md:flex-row items-center    h-screen   justify-center md:justify-around main-body">
+        <div id='home' className="    flex flex-col md:flex-row items-center    h-screen   justify-center md:justify-around main-body">
 
             <div className="loader">
                 <div className="intern"></div>
@@ -36,9 +36,10 @@ const HeroSection = () => {
                         Download Resume
                     </button>
 
-                    <button className="hero-button mx-2" onClick="location.href='./#contact'">
+                    <button className="hero-button mx-2" onClick={() => window.location.href = './#contact'}>
                         Contact Info
                     </button>
+
                 </div>
                 <div className='flex justify-center md:justify-start items-center'>
                     <Link target='_blank' href='https://github.com/tanbin0001'>

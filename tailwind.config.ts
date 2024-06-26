@@ -19,6 +19,6 @@ const config: Config = {
   },
   plugins: [],
   presets: [require("keep-react/preset")],
-
+  darkMode: 'class'
 };
 export default config;

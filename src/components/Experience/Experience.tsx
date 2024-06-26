@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Experience = () => {
     return (
-        <div className=' mt-10  '>
+        <div id='experience' className=' mt-10  '>
             <div className='text-center  mb-10'>
                 <p className='animate-pulse'>Have a look at my</p>
                 <h1 className='md:text-4xl font-bold'>&lt;My Experience/&gt;</h1>

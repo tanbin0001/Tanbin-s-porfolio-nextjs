@@ -10,7 +10,7 @@ import Link from 'next/link'
 
 export const Projects = () => {
     return (
-        <div className=''>
+        <div id='projects' className=''>
 
 
             <div className='text-center  mb-10'>

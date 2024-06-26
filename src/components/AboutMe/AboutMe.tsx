@@ -3,7 +3,7 @@ import about from "../../assets/aboutPhoto.jpg";
 
 const AboutMe = () => {
     return (
-        <section className='     '>
+        <section id='aboutme' className='     '>
             {/* <div className='flex flex-col items-center justify-center '> */}
             <div className='flex flex-col items-center justify-center '>
                 <div className='text-center '>
