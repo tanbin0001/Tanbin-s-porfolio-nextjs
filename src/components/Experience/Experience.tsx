@@ -17,14 +17,21 @@ const Experience = () => {
             <div>
 
                 <div className='lg:flex justify-center gap-10 mt-5'  >
-                    <div className="gas he">
+                    <div
+                        data-aos="flip-right"
+                        data-aos-duration="2000"
+                        className="gas he">
                         <span className="">Associate Software Engineer @Nasheed Station</span>
                         <h2 className="symbol">2023-2024 Feb | ISLAMABAD, PAKISTAN</h2>
                         <p className="name">Worked as an Angular Developer and e2e tester on a team responsible for developing new features for Nasheed Station</p>
                     </div>
 
                     {/* card 2 */}
-                    <div className="gas xe">
+                    <div
+                        data-aos="flip-left"
+                        data-aos-duration="2000"
+
+                        className="gas xe">
                         <span className="">Software Engineer @Unicraft IT</span>
                         <h2 className="symbol">2024-PRESENT | DHAKA, BANGLADESH</h2>
                         <p className="name">Working as a part-time Software Engineer. Developing and maintaining web applications using modern frameworks and technologies.</p>

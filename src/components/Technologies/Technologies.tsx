@@ -1,4 +1,6 @@
-import React from 'react';
+"use client"
+
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import htmlIcon from '../../assets/code/html-5.png';
 import cssIcon from '../../assets/code/css-3.png';
@@ -28,8 +30,13 @@ import githubIcon from '../../assets/github1.png';
 import gitlabIcon from '../../assets/code/gitlab.png';
 import cypressIcon from '../../assets/code/cypress.png';
 import "./Technologies.css"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Technologies = () => {
+    useEffect(() => {
+        AOS.init();
+    }, []);
     return (
         <section id="experience" className="   py-20" >
             <div className="text-center mb-10">
@@ -44,7 +51,10 @@ const Technologies = () => {
                     <h2 className="text-xl font-bold   mb-5 text-center underline"> &#123; Frontend Development &#125;</h2>
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1   gap-4 justify-items-center ">
                         {/* HTML */}
-                        <div className="flex items-center html techs ">
+                        <div
+                            data-aos="zoom-in"
+
+                            className="flex items-center html techs  ">
                             <Image
                                 src={htmlIcon}
                                 alt="HTML icon"
@@ -59,7 +69,11 @@ const Technologies = () => {
                         </div>
 
                         {/* CSS */}
-                        <div className="flex items-center css techs">
+                        <div
+                            data-aos="zoom-out"
+
+
+                            className="flex items-center css techs">
                             <Image
                                 src={cssIcon}
                                 alt="CSS icon"
@@ -74,7 +88,10 @@ const Technologies = () => {
                         </div>
 
                         {/* SASS */}
-                        <div className="flex items-center techs sass">
+                        <div
+                            data-aos="zoom-in"
+
+                            className="flex items-center techs sass">
                             <Image
                                 src={sassIcon}
                                 alt="SASS icon"
@@ -89,7 +106,9 @@ const Technologies = () => {
                         </div>
 
                         {/* Next.js */}
-                        <div className="flex items-center techs nextJs">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center techs nextJs">
                             <Image
                                 src={nextjsIcon}
                                 alt="Next.js icon"
@@ -104,7 +123,9 @@ const Technologies = () => {
                         </div>
 
                         {/* React.js */}
-                        <div className="flex items-center techs reactJs">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center techs reactJs">
                             <Image
                                 src={reactIcon}
                                 alt="React.js icon"
@@ -119,7 +140,9 @@ const Technologies = () => {
                         </div>
 
                         {/* Angular.js */}
-                        <div className="flex items-center techs angularJs text-center">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center techs angularJs text-center">
                             <Image
                                 src={angularIcon}
                                 alt="Angular.js icon"
@@ -134,7 +157,9 @@ const Technologies = () => {
                         </div>
 
                         {/* JavaScript */}
-                        <div className="flex items-center techs js">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center techs js">
                             <Image
                                 src={jsIcon}
                                 alt="JavaScript icon"
@@ -149,7 +174,9 @@ const Technologies = () => {
                         </div>
 
                         {/* TypeScript */}
-                        <div className="flex items-center techs ts">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center techs ts">
                             <Image
                                 src={tsIcon}
                                 alt="TypeScript icon"
@@ -164,7 +191,9 @@ const Technologies = () => {
                         </div>
 
                         {/* Tailwind */}
-                        <div className="flex items-center techs tailwind">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center techs tailwind">
                             <Image
                                 src={tailwindIcon}
                                 alt="Tailwind icon"
@@ -179,7 +208,9 @@ const Technologies = () => {
                         </div>
 
                         {/* Bootstrap */}
-                        <div className="flex items-center techs bootstrap">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center techs bootstrap">
                             <Image
                                 src={bootstrapIcon}
                                 alt="Bootstrap icon"
@@ -194,7 +225,9 @@ const Technologies = () => {
                         </div>
 
                         {/* Material-UI */}
-                        <div className="flex items-center techs material">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center techs material">
                             <Image
                                 src={materialuiIcon}
                                 alt="Material-UI icon"
@@ -209,7 +242,9 @@ const Technologies = () => {
                         </div>
 
                         {/* Ant Design */}
-                        <div className="flex items-center techs antd" >
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center techs antd" >
                             <Image
                                 src={antdIcon}
                                 alt="Ant Design icon"
@@ -224,7 +259,9 @@ const Technologies = () => {
                         </div>
 
                         {/* Shadcn/ui */}
-                        <div className="flex items-center techs shadecn">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center techs shadecn">
                             <Image
                                 src={shadcnIcon}
                                 alt="Shadcn/ui icon"
@@ -239,7 +276,9 @@ const Technologies = () => {
                         </div>
 
                         {/* Redux */}
-                        <div className="flex items-center  techs redux">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center  techs redux">
                             <Image
                                 src={reduxIcon}
                                 alt="Redux icon"
@@ -254,7 +293,9 @@ const Technologies = () => {
                         </div>
 
                         {/* Zustand */}
-                        <div className="flex items-center techs zustand">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center techs zustand">
                             <Image
                                 src={zustandIcon}
                                 alt="Zustand icon"
@@ -276,7 +317,9 @@ const Technologies = () => {
                     <h2 className="text-xl font-bold   my-10 text-center underline"> &#123; Backend Development &#125;</h2>
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1   gap-4 justify-items-center ">
                         {/* Node.js */}
-                        <div className="flex items-center techs nodejs">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center techs nodejs">
                             <Image
                                 src={nodejsIcon}
                                 alt="Node.js icon"
@@ -291,7 +334,9 @@ const Technologies = () => {
                         </div>
 
                         {/* Express.js */}
-                        <div className="flex items-center  techs expressjs">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center  techs expressjs">
                             <Image
                                 src={expressIcon}
                                 alt="Express.js icon"
@@ -306,7 +351,9 @@ const Technologies = () => {
                         </div>
 
                         {/* Axios */}
-                        <div className="flex items-center  text-center techs axios">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center  text-center techs axios">
                             <Image
                                 src={axiosIcon}
                                 alt="Axios icon"
@@ -321,7 +368,9 @@ const Technologies = () => {
                         </div>
 
                         {/* PostgreSQL */}
-                        <div className="flex items-center  text-center  techs postgresql">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center  text-center  techs postgresql">
                             <Image
                                 src={postgresqlIcon}
                                 alt="PostgreSQL icon"
@@ -336,7 +385,9 @@ const Technologies = () => {
                         </div>
 
                         {/* GraphQL */}
-                        <div className="flex items-center text-center  techs graphql">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center text-center  techs graphql">
                             <Image
                                 src={graphqlIcon}
                                 alt="GraphQL icon"
@@ -351,7 +402,9 @@ const Technologies = () => {
                         </div>
 
                         {/* MongoDB */}
-                        <div className="flex items-center text-center  techs  mongodb">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center text-center  techs  mongodb">
                             <Image
                                 src={mongodbIcon}
                                 alt="MongoDB icon"
@@ -366,7 +419,9 @@ const Technologies = () => {
                         </div>
 
                         {/* Firebase */}
-                        <div className="flex items-center text-center  techs firebase">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center text-center  techs firebase">
                             <Image
                                 src={firebaseIcon}
                                 alt="Firebase icon"
@@ -381,7 +436,9 @@ const Technologies = () => {
                         </div>
 
                         {/* Mongoose */}
-                        <div className="flex items-center text-center  techs mongoose">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center text-center  techs mongoose">
                             <Image
                                 src={mongooseIcon}
                                 alt="Mongoose icon"
@@ -396,7 +453,9 @@ const Technologies = () => {
                         </div>
 
                         {/* JWT */}
-                        <div className="flex items-center text-center  techs  jwt">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center text-center  techs  jwt">
                             <Image
                                 src={jwtIcon}
                                 alt="JWT icon"
@@ -421,7 +480,9 @@ const Technologies = () => {
 
 
                         {/* Github */}
-                        <div className="flex items-center  text-center  techs github">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center  text-center  techs github">
                             <Image
                                 src={githubIcon}
                                 alt="Github icon"
@@ -436,7 +497,9 @@ const Technologies = () => {
                         </div>
 
                         {/* Gitlab */}
-                        <div className="flex items-center  text-center  techs gitlab ">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center  text-center  techs gitlab ">
                             <Image
                                 src={gitlabIcon}
                                 alt="Gitlab icon"
@@ -451,7 +514,9 @@ const Technologies = () => {
                         </div>
 
                         {/* Cypress */}
-                        <div className="flex items-center  text-center  techs cypress">
+                        <div
+                            data-aos="zoom-in"
+                            className="flex items-center  text-center  techs cypress">
                             <Image
                                 src={cypressIcon}
                                 alt="Cypress icon"

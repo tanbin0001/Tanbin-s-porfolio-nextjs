@@ -1,6 +1,6 @@
 "use client"
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./HeroSection.css"
 import Image from 'next/image'
 
@@ -8,23 +8,31 @@ import logo from '../../assets/logo.png'
 import github from '../../assets/github1.png'
 import linkedin from '../../assets/linkedin .png'
 import Link from 'next/link';
-1366 * 768
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const HeroSection = () => {
+    useEffect(() => {
+        AOS.init();
+    }, []);
     return (
 
 
         <div id='home' className="    flex flex-col md:flex-row items-center    h-screen   justify-center md:justify-around main-body">
 
-            <div className="loader">
+            <div data-aos="fade-down"
+                data-aos-duration="3000"
+                className="loader">
                 <div className="intern"></div>
                 <div className="external-shadow">
                     <div className="central"></div>
                 </div>
             </div>
 
-            <div className="flex flex-col items-center md:items-start text-center md:text-left mt-10 md:mt-0">
+            <div
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                className="flex flex-col items-center md:items-start text-center md:text-left mt-10 md:mt-0">
                 <p className="">Hello, I&apos;m</p>
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">Ashrafuj Jaman Tanbin</h1>
                 <p className="">Full Stack Developer</p>
