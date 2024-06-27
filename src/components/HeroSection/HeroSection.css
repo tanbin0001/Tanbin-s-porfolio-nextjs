@@ -30,12 +30,12 @@
     position: absolute;
     color: white;
     z-index: 9999;
- margin-top: 29px ;
- margin-left: 13px ;
+ margin-top: 40px ;
+ margin-left: px ;
   }
   
   .intern::before {
-    content: url('../../assets/herosection-profile.png');
+    content: url('../../assets/heroSectionLogo.png');
     animation: percent 2s ease-in-out infinite;
 
   }
