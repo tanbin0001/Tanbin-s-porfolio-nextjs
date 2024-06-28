@@ -38,9 +38,12 @@
 /* Media query for smaller devices */
 @media (max-width: 768px) {
     .gas {
-        height: 200px; /* Adjust height for smaller screens */
-        width: 100%; /* Full width for smaller screens */
+        height: 250px; /* Adjust height for smaller screens */
+        width: 300px; /* Full width for smaller screens */
         font-size: 0.9rem; /* Adjust font size for smaller screens */
+        margin: 10px auto;
+
+        
     }
 }
 

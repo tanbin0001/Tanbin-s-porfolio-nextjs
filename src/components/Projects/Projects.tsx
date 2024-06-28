@@ -22,7 +22,8 @@ export const Projects = () => {
             <div className='space-y-10'>
 
                 {/* project 1 */}
-                <div data-aos="fade-right" className="max-w-4xl mx-auto p-6 bg-card text-card-foreground rounded-lg shadow-2xLarge flex   border-r-8 border-b-8 border-blue-300 flex-col md:flex-row shadow-blue-300  items-center ">
+                <div className="lg:max-w-4xl md:max-w-4xl max-w-72 mx-auto p-6 bg-card text-card-foreground rounded-lg shadow-2xLarge flex border-r-8 border-b-8 border-blue-300 flex-col md:flex-row shadow-blue-300 items-center">
+
 
                     <div className="md:w-1/2   mx-auto">
 
@@ -52,7 +53,7 @@ export const Projects = () => {
 
 
                 {/* project 2 */}
-                <div data-aos="fade-left" className="max-w-4xl mx-auto p-6 bg-card text-card-foreground rounded-lg shadow-2xLarge flex  border-l-8 border-b-8 border-red-300 flex-col  md:flex-row shadow-red-300 items-center">
+                <div className="lg:max-w-4xl md:max-w-4xl max-w-72 mx-auto p-6 bg-card text-card-foreground rounded-lg shadow-2xLarge flex  border-l-8 border-b-8 border-red-300 flex-col  md:flex-row shadow-red-300 items-center">
 
 
                     {/* Text Section */}
@@ -89,7 +90,7 @@ export const Projects = () => {
                 </div>
 
                 {/* project 1 */}
-                <div data-aos="fade-right" className="max-w-4xl mx-auto p-6 bg-card text-card-foreground rounded-lg shadow-2xLarge flex   border-r-8 border-b-8 border-pink-300 flex-col md:flex-row shadow-pink-300 items-center">
+                <div className="lg:max-w-4xl md:max-w-4xl max-w-72 mx-auto p-6 bg-card text-card-foreground rounded-lg shadow-2xLarge flex   border-r-8 border-b-8 border-pink-300 flex-col md:flex-row shadow-pink-300 items-center">
 
                     <div className="md:w-1/2   mx-auto">
 

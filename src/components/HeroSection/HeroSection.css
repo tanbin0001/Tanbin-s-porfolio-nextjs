@@ -1,5 +1,4 @@
  
-
 .loader {
     display: flex;
     justify-content: center;
@@ -7,6 +6,7 @@
     position: relative;
     width: 290px;  
     height: 290px;  
+
   }
   
   .external-shadow {
@@ -58,11 +58,7 @@
 
 
 
-
-
-  /* ========================================================= */
-  /* button */
-  /* ========================================================= */
+ 
 
   .hero-button {
     width:  10rem;
@@ -98,4 +94,19 @@
    
    button:hover::before {
     width: 10rem;
-   }
+   } 
+
+ 
+   .image-background {
+    box-shadow: 0.5em 0.5em 3em blueviolet,
+                -0.5em 0.5em 3em blue,
+                0.5em -0.5em 3em purple,
+                -0.5em -0.5em 3em cyan;
+    border-radius: 50%;  
+    width: 300px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    background-image: url('../../assets/herosection2.jpg');
+    background-size: cover; /* Ensure the image covers the entire background area */
+    background-position: center; /* Center the background image */
+     
+}

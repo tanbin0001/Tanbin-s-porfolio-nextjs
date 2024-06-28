@@ -38,7 +38,7 @@ const Technologies = () => {
         AOS.init();
     }, []);
     return (
-        <section id="experience" className="   py-20" >
+        <section id="technologies" className="   py-20" >
             <div className="text-center mb-10">
                 <p className="animate-pulse">Explore My</p>
                 <h1 className="md:text-4xl font-bold">&lt;Technologies/&gt;</h1>
@@ -539,85 +539,3 @@ const Technologies = () => {
 };
 
 export default Technologies;
-
-
-// import React from 'react';
-// import Image from 'next/image';
-// import htmlIcon from '../../assets/code/html-5.png';
-// import cssIcon from '../../assets/code/css-3.png';
-// import sassIcon from '../../assets/code/sass.png';
-
-// import "./Technologies.css"
-// const Technologies = () => {
-//     return (
-//         <section id="experience" className="py-20">
-//             <div className="text-center mb-10">
-//                 <p className="animate-pulse">Explore My</p>
-//                 <h1 className="text-4xl font-bold">&lt;Technologies/&gt;</h1>
-//             </div>
-
-//             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center">
-//                 {/* Frontend Development */}
-//                 <div className="mb-12">
-//                     <h2 className="text-xl font-bold mb-4">Frontend Development</h2>
-//                     <div className="grid grid-cols-3 gap-4">
-//                         {/* HTML */}
-//                         <div className="flex items-center justify-center html techs">
-//                             <div className="">
-//                                 <Image
-//                                     src={htmlIcon}
-//                                     alt="HTML icon"
-//                                     width={40}
-//                                     height={40}
-//                                     className="rounded-full"
-//                                 />
-//                             </div>
-//                             <div className="mt-3">
-//                                 <h3 className="text-lg font-bold symbol">HTML</h3>
-//                                 <p className="text-sm  name">Experienced</p>
-//                             </div>
-//                         </div>
-
-//                         {/* CSS */}
-//                         <div className="flex items-center justify-center css techs">
-//                             <div className=" ">
-//                                 <Image
-//                                     src={cssIcon}
-//                                     alt="CSS icon"
-//                                     width={40}
-//                                     height={40}
-//                                     className="rounded-full"
-//                                 />
-//                             </div>
-//                             <div className="mt-3">
-//                                 <h3 className="text-lg font-bold symbol">CSS</h3>
-//                                 <p className="text-sm">Experienced</p>
-//                             </div>
-//                         </div>
-
-//                         {/* SASS */}
-//                         <div className="flex items-center justify-center">
-//                             <div className=" sass techs">
-//                                 <Image
-//                                     src={sassIcon}
-//                                     alt="SASS icon"
-//                                     width={40}
-//                                     height={40}
-//                                     className="rounded-full"
-//                                 />
-//                             </div>
-//                             <div className="mt-3">
-//                                 <h3 className="text-lg font-bold symbol">SASS</h3>
-//                                 <p className="text-sm">Intermediate</p>
-//                             </div>
-//                         </div>
-
-//                         {/* Add more technologies similarly */}
-//                     </div>
-//                 </div>
-//             </div>
-//         </section>
-//     );
-// };
-
-// export default Technologies;

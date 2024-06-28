@@ -16,9 +16,8 @@ const AboutMe = () => {
                 <div className='grid lg:grid-cols-2 lg:justify-items-stretch justify-items-center  '>
                     {/* Biography part */}
                     <div
-                        data-aos="fade-right"
-                        data-aos-duration="3000"
-                        className='space-y-3  text-center md:text-start lg:w-[500px]  '>
+
+                        className='space-y-3  text-center md:text-start lg:w-[500px] w-96 '>
                         <p>BIOGRAPHY</p>
                         <p>
                             Hi, I&rsquo;m Ashrafuj Jaman Tanbin, a Full Stack Developer passionate about crafting elegant, functional, and user-centric digital experiences. With 1 year of professional experience and 2.5 years of immersion in web development, I&apos;ve mastered front-end and back-end technologies.
@@ -33,8 +32,7 @@ const AboutMe = () => {
 
                     {/* Image part */}
                     <div
-                        data-aos="fade-left"
-                        data-aos-duration="3000"
+
                         className='flex justify-end items-center'>
                         <div className='space-y-3 border-r-4 border-white shadow-lg rounded-lg p-4'>
                             <Image src={about} className='rounded-md' alt='about' width={350} height={350} />
