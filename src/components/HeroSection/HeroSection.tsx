@@ -29,7 +29,9 @@ const HeroSection = () => {
                 </div>
             </div> */}
             <div>
-                <div className='image-background '>
+                <div
+
+                    className='image-background '>
                     {/* <Image src={heroSectionLogo} alt="heroLogo" className="image-animation" /> */}
                 </div>
 
