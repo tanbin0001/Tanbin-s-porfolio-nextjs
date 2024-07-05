@@ -18,16 +18,9 @@ const HeroSection = () => {
     return (
 
 
-        <div id='home' className="     flex flex-col md:flex-row items-center    h-screen   justify-center md:justify-around main-body">
+        <div id='home' className="     flex flex-col md:flex-row items-center    h-screen   justify-center md:justify-around main-body my-20">
 
-            {/* <div data-aos="fade-down"
-                data-aos-duration="3000"
-                className="loader">
-                <div className="intern"></div>
-                <div className="external-shadow">
-                    <div className="central"></div>
-                </div>
-            </div> */}
+
             <div>
                 <div
 

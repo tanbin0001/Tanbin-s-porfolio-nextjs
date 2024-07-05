@@ -12,7 +12,7 @@ const AddBlog = () => {
 
     const handleEditorSubmit = async (data: any) => {
         const res = await addBlog(data);
-        console.log(res, 'resssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss');
+
     };
 
     return (

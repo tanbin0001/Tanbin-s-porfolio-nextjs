@@ -14,13 +14,13 @@ import logo from '../../assets/logo.png'
 
 export const Nav = () => {
     return (
-        <div className=' mx-20'>
+        <div className=' lg:mx-20'>
             <div>
                 <Navbar className="dark:bg-black dark:border-black text-white !important">
 
                     <NavbarContainer>
                         <NavbarList >
-                            <a href="#home">
+                            <a href="/">
 
                                 <NavbarItem>Home</NavbarItem>
                             </a>
