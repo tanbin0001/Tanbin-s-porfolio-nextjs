@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useGetAllProjectsQuery } from '@/redux/api/project.api';
 import EditIcon from '@mui/icons-material/Edit';
 import Link from 'next/link';
+import DeleteIcon from '@mui/icons-material/Delete';
 const AllProjects = () => {
     const { data } = useGetAllProjectsQuery('');
 
@@ -30,10 +31,12 @@ const AllProjects = () => {
 
                         </div>
                         <div className="px-4 pb-4 flex justify-between">
-                            <Link href='lll'>
+                            <Link href={`/dashboard/admin/projects/all-projects/edit/${project._id}`}>
                                 <button className="text-blue-500 hover:text-blue-700"> <EditIcon /></button>
                             </Link>
-                            <button className="text-blue-500 hover:text-blue-700">Learn More</button>
+                            <button className="text-red-500 hover:text-red-700">
+                                <DeleteIcon />
+                            </button>
                         </div>
                     </div>
                 ))}

@@ -1,0 +1,27 @@
+  
+.react-quill-container .ql-toolbar {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border: 1px solid #333;
+}
+
+.react-quill-container .ql-container {
+  background-color: #121212;
+  color: #e0e0e0;
+  border: 1px solid #333;
+}
+
+.react-quill-container .ql-editor {
+  color: #e0e0e0;
+}
+
+ 
+.dropzone {
+  border: 2px dashed #444;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+ 
+.MuiTextField-root {
+  background-color: #1e1e1e;
+} 

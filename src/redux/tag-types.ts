@@ -4,7 +4,7 @@ export enum tagTypes {
 
    user = 'user',
    projects = 'projects',
-   bookings = 'bookings',
+   blogs = 'blogs',
 
 }
 
@@ -14,6 +14,6 @@ export const tagTypesList = [
 
    tagTypes.user,
    tagTypes.projects,
-   tagTypes.bookings,
+   tagTypes.blogs,
 
 ];

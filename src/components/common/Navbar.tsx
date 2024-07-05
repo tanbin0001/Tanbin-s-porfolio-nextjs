@@ -50,6 +50,10 @@ export const Nav = () => {
 
                                 <NavbarItem>Contact</NavbarItem>
                             </a>
+                            <a href="/blogs">
+
+                                <NavbarItem>Blogs</NavbarItem>
+                            </a>
                         </NavbarList>
                         <NavbarCollapseBtn />
                         <NavbarCollapse>
@@ -76,6 +80,10 @@ export const Nav = () => {
                             <a href="#contact">
 
                                 <NavbarItem>Contact</NavbarItem>
+                            </a>
+                            <a href="/blogs">
+
+                                <NavbarItem>Blogs</NavbarItem>
                             </a>
                         </NavbarCollapse>
                     </NavbarContainer>
